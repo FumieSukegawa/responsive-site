@@ -1,0 +1,71 @@
+@charset 'UTF-8';
+/* Base
+------------------------------------------------------------*/
+html
+{
+    font-size: 62.5%;
+    width: 100%;
+    text-align: center
+    
+}
+
+.flexible-images {
+  background-image: url("./images/yakei.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+}
+
+.box2 {
+  float: left;
+  width: 31%;
+  border: solid 1px tomato;
+  box-sizing: border-box;
+  margin: 1%;
+  text-align: center
+}
+  @media (max-width: 768px) {
+  .flexible-images {
+      height: 250px;
+    }
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button{
+    border-radius: 5px;
+    background-color: #32cd32;
+    padding:10px;
+    color:#fff;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin:10px auto;
+    text-align: center
+}
+
+/* スマートフォン版はこちらで指定！ */
+@media (max-width: 768px) {
+  .flexible-images {
+  height: 250px;
+    }
+  .box2{
+  float: none;
+  width: 90%;
+  margin: 3px auto;
+  }
+}
